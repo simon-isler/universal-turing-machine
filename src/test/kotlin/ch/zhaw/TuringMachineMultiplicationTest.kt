@@ -23,7 +23,7 @@ class TuringMachineMultiplicationTest {
         turingMachine.run(Mode.RUN)
 
         assertTrue(turingMachine.isAccepted())
-        assertEquals(8, turingMachine.getTape().getResult())
+        assertEquals(2 * 4, turingMachine.getTape().getResult())
     }
 
     @Test
@@ -33,7 +33,7 @@ class TuringMachineMultiplicationTest {
         turingMachine.run(Mode.RUN)
 
         assertTrue(turingMachine.isAccepted())
-        assertEquals(221, turingMachine.getTape().getResult())
+        assertEquals(13 * 17, turingMachine.getTape().getResult())
     }
 
     @Test
@@ -43,7 +43,7 @@ class TuringMachineMultiplicationTest {
         turingMachine.run(Mode.RUN)
 
         assertTrue(turingMachine.isAccepted())
-        assertEquals(27, turingMachine.getTape().getResult())
+        assertEquals(1 * 27, turingMachine.getTape().getResult())
     }
 
     @Test
@@ -53,7 +53,7 @@ class TuringMachineMultiplicationTest {
         turingMachine.run(Mode.RUN)
 
         assertTrue(turingMachine.isAccepted())
-        assertEquals(0, turingMachine.getTape().getResult())
+        assertEquals(23 * 0, turingMachine.getTape().getResult())
     }
 
     @Test

@@ -23,7 +23,7 @@ class TuringMachineAdditionTest {
         turingMachine.run(Mode.RUN)
 
         assertTrue(turingMachine.isAccepted())
-        assertEquals(6, turingMachine.getTape().getResult())
+        assertEquals(2 + 4, turingMachine.getTape().getResult())
     }
 
     @Test
@@ -33,7 +33,7 @@ class TuringMachineAdditionTest {
         turingMachine.run(Mode.RUN)
 
         assertTrue(turingMachine.isAccepted())
-        assertEquals(20, turingMachine.getTape().getResult())
+        assertEquals(12 + 8, turingMachine.getTape().getResult())
     }
 
     @Test
