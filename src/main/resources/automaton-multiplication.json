@@ -1,0 +1,468 @@
+﻿{
+  "name": "multiplication",
+  "description": "",
+  "type": "TM",
+  "automaton": {
+    "acceptCache": [],
+    "simulationInput": [
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "Alphabet": [
+      "0",
+      "1"
+    ],
+    "StackAlphabet": [
+      "1",
+      "0",
+      "X"
+    ],
+    "States": [
+      {
+        "ID": 1,
+        "Name": "q0",
+        "x": 150,
+        "y": 150,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 1,
+            "Target": 2,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "0",
+                "1",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 1,
+            "Target": 10,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "1",
+                "1",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": true
+      },
+      {
+        "ID": 2,
+        "Name": "q1",
+        "x": 310,
+        "y": 150,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 2,
+            "Target": 2,
+            "x": 0,
+            "y": -150,
+            "Labels": [
+              [
+                "0",
+                "0",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 2,
+            "Target": 3,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "1",
+                "1",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 3,
+        "Name": "q2",
+        "x": 490,
+        "y": 150,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 3,
+            "Target": 4,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "0",
+                "X",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 3,
+            "Target": 8,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "1",
+                "1",
+                "L"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 4,
+        "Name": "q3",
+        "x": 720,
+        "y": 140,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 4,
+            "Target": 5,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "1",
+                "1",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 4,
+            "Target": 4,
+            "x": 0,
+            "y": -150,
+            "Labels": [
+              [
+                "0",
+                "0",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 5,
+        "Name": "q4",
+        "x": 920,
+        "y": 150,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 5,
+            "Target": 6,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "1",
+                "0",
+                "L"
+              ]
+            ]
+          },
+          {
+            "Source": 5,
+            "Target": 5,
+            "x": 0,
+            "y": -150,
+            "Labels": [
+              [
+                "0",
+                "0",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 6,
+        "Name": "q5",
+        "x": 1130,
+        "y": 150,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 6,
+            "Target": 7,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "1",
+                "1",
+                "L"
+              ]
+            ]
+          },
+          {
+            "Source": 6,
+            "Target": 6,
+            "x": 0,
+            "y": -150,
+            "Labels": [
+              [
+                "0",
+                "0",
+                "L"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 7,
+        "Name": "q6",
+        "x": 1150,
+        "y": 370,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 7,
+            "Target": 3,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "X",
+                "X",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 7,
+            "Target": 7,
+            "x": 150,
+            "y": -10,
+            "Labels": [
+              [
+                "0",
+                "0",
+                "L"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 8,
+        "Name": "q7",
+        "x": 490,
+        "y": 300,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 8,
+            "Target": 9,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "1",
+                "1",
+                "L"
+              ]
+            ]
+          },
+          {
+            "Source": 8,
+            "Target": 8,
+            "x": 90,
+            "y": -20,
+            "Labels": [
+              [
+                "X",
+                "0",
+                "L"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 9,
+        "Name": "q8",
+        "x": 500,
+        "y": 440,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 9,
+            "Target": 1,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "1",
+                "1",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 9,
+            "Target": 9,
+            "x": 110,
+            "y": 40,
+            "Labels": [
+              [
+                "0",
+                "0",
+                "L"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 10,
+        "Name": "q9",
+        "x": 150,
+        "y": 300,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 10,
+            "Target": 10,
+            "x": -100,
+            "y": 0,
+            "Labels": [
+              [
+                "0",
+                "1",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 10,
+            "Target": 11,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "1",
+                "1",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 11,
+        "Name": "q10",
+        "x": 150,
+        "y": 460,
+        "Final": true,
+        "Radius": 30,
+        "Transitions": [],
+        "Start": false
+      }
+    ],
+    "lastInputs": [
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "0",
+        "1",
+        "1",
+        "1",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "0",
+        "1",
+        "1",
+        "1"
+      ]
+    ]
+  }
+}

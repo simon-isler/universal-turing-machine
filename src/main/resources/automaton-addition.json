@@ -1,0 +1,205 @@
+﻿{
+  "name": "addition",
+  "description": "",
+  "type": "TM",
+  "automaton": {
+    "acceptCache": [],
+    "simulationInput": [
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    "Alphabet": [
+      "0",
+      "1"
+    ],
+    "StackAlphabet": [
+      "1",
+      "0",
+      "B"
+    ],
+    "States": [
+      {
+        "ID": 1,
+        "Name": "q0",
+        "x": 190,
+        "y": 150,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 1,
+            "Target": 2,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "0",
+                "1",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 1,
+            "Target": 3,
+            "x": 0,
+            "y": -100,
+            "Labels": [
+              [
+                "1",
+                "1",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": true
+      },
+      {
+        "ID": 2,
+        "Name": "q1",
+        "x": 320,
+        "y": 150,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 2,
+            "Target": 3,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "1",
+                "0",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 2,
+            "Target": 2,
+            "x": 0,
+            "y": -150,
+            "Labels": [
+              [
+                "0",
+                "0",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 3,
+        "Name": "q2",
+        "x": 510,
+        "y": 150,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 3,
+            "Target": 4,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "1",
+                "1",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 3,
+            "Target": 3,
+            "x": 0,
+            "y": -150,
+            "Labels": [
+              [
+                "0",
+                "0",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 4,
+        "Name": "q3",
+        "x": 690,
+        "y": 150,
+        "Final": true,
+        "Radius": 30,
+        "Transitions": [],
+        "Start": false
+      }
+    ],
+    "lastInputs": [
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ]
+    ]
+  },
+  "GUID": "rai5zxmt2"
+}
